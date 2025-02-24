@@ -1,0 +1,76 @@
+.question-pair {
+  background-color: #ffffff; /* White question background */
+  border-radius: 8px;
+  padding: 25px 30px; /* Adjusted padding for questions */
+  border: 1px solid #e8e4de; /* Very light border - from image */
+}
+
+.question-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option-text {
+  font-size: 1.1em;
+  color: #584d41; /* Brown text color */
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+}
+
+.left-option {
+  text-align: left;
+  font-weight: normal; /* Normal font weight for options */
+}
+
+.right-option {
+  text-align: right;
+  font-weight: normal; /* Normal font weight for options */
+}
+
+.radio-options {
+  display: flex;
+  gap: 10px; /* Adjusted gap for radio buttons */
+  justify-content: center;
+  flex: 2;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; /* Adjusted radio label size */
+  height: 28px;
+}
+
+.radio-label input[type="radio"] {
+  appearance: none;
+  width: 18px; /* Make the radio button smaller */
+  height: 18px; /* Make the radio button smaller */
+  border-radius: 50%;
+  border: 1.5px solid #b8b0a5; /* Greyish brown radio border - from image */
+  background-color: #ffffff; /* White radio background */
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    margin: 0; /* Remove any default margins */
+}
+
+.radio-label input[type="radio"]:hover {
+  border-color: #9c948a; /* Darker hover border */
+}
+
+.radio-label input[type="radio"]:checked {
+  border-color: #709775; /* Green checked border - from image */
+  background-color: #709775; /* Green checked background */
+}
+
+.radio-label input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 50%;  /* Adjust size of the inner circle */
+    height: 50%; /* Adjust size of the inner circle */
+    margin: 25%; /* Center the inner circle */
+    background-color: #ffffff; /* White inner circle when checked */
+    border-radius: 50%;
+}
