@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Question as QuestionType } from '../types';
 import './Question.css';
 
