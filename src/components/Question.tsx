@@ -14,6 +14,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, onAnswer }) => {
       <div className="question-options">
         <span className="option-text left-option">{question.textLeft}</span>
         <div className="radio-options">
+          <span className="accuracy-label">Inaccurate</span>
           {[1, 2, 3, 4, 5].map((value) => (
             <label key={value} className="radio-label">
               <input
@@ -25,6 +26,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, onAnswer }) => {
               />
             </label>
           ))}
+          <span className="accuracy-label">Accurate</span>
         </div>
         <span className="option-text right-option">{question.textRight}</span>
       </div>

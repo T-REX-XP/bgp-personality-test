@@ -5,7 +5,7 @@ import NavigationButtons from './components/NavigationButtons';
 import Header from './components/Header';
 import './App.css';
 
-const questionsPerPage = 6;
+const questionsPerPage = 10; // Increased questions per page
 
 function App() {
   const [currentPage, setCurrentPage] = useState<number>(0);
@@ -15,6 +15,8 @@ function App() {
   const startIndex = currentPage * questionsPerPage;
   const currentQuestionsPage = mockQuestions.slice(startIndex, startIndex + questionsPerPage);
   const totalPages = Math.ceil(mockQuestions.length / questionsPerPage);
+    const totalQuestions = mockQuestions.length; // Get total questions
+
 
   useEffect(() => {
     const currentPageAnswers = answers.slice(startIndex, startIndex + questionsPerPage);
@@ -49,7 +51,8 @@ function App() {
     if (!isNextPageDisabled) {
       const response = mockQuestions.map((question, index) => ({
         questionId: question.id,
-        answer: answers[index]
+        answer: answers[index],
+        trait: question.trait, // Include trait in response
       }));
       console.log("Final Responses:", response);
       alert("Test submitted! Check console for responses.");
@@ -60,7 +63,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header currentPage={currentPage} totalPages={totalPages} />
+      <Header currentPage={currentPage} totalPages={totalPages} totalQuestions={totalQuestions} />
       <QuestionList
         questions={currentQuestionsPage}
         answers={answers.slice(startIndex, startIndex + questionsPerPage)}
