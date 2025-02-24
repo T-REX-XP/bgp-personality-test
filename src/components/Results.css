@@ -73,7 +73,7 @@
 
 .results-buttons {
   display: flex;
-  justify-content: space-around; /* Center buttons */
+  justify-content: space-around;
   margin-top: 20px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .save-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -96,10 +96,43 @@
 }
 
 .retake-button {
-  background-color: #008CBA; /* Blue */
+  background-color: #008CBA;
   color: white;
 }
 
 .retake-button:hover {
   background-color: #005f80;
+}
+
+.explain-button {
+  display: block; /* Make it a block-level element */
+  margin: 20px auto; /* Center horizontally */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #7d7369; /* Greyish brown */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.explain-button:hover {
+  background-color: #584d41; /* Darker brown on hover */
+}
+
+.explanations-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #e8e4de; /* Light border */
+  border-radius: 8px;
+}
+
+.explanation-item {
+  margin-bottom: 15px;
+}
+
+.explanation-item h4 {
+  color: #3c3732; /* Dark brown heading */
+  margin-bottom: 5px;
 }
