@@ -8,6 +8,7 @@ interface NavigationButtonsProps {
   goToPreviousPage: () => void;
   goToNextPage: () => void;
   handleSubmit: () => void;
+  randomAnswer: () => void; // Add randomAnswer prop
 }
 
 const NavigationButtons: React.FC<NavigationButtonsProps> = ({
@@ -17,6 +18,7 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({
   goToPreviousPage,
   goToNextPage,
   handleSubmit,
+  randomAnswer, // Receive randomAnswer function
 }) => {
   return (
     <div className="navigation">
@@ -27,6 +29,11 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({
       >
         Previous
       </button>
+
+      <button className="nav-button random-button" onClick={randomAnswer}>
+        Random Answer
+      </button>
+
       {currentPage === totalPages - 1 ? (
         <button
           className="nav-button submit-button"

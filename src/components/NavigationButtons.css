@@ -41,3 +41,8 @@
 .submit-button:hover {
   background-color: #557359; /* Even darker green on submit hover */
 }
+
+.random-button {
+  background-color: #b0b0b0;
+    color: #ffffff;
+}

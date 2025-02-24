@@ -1,17 +1,11 @@
 .header-container {
   text-align: center;
-  margin-bottom: 50px; /* Increased margin below header */
+  margin-bottom: 50px;
 }
 
 h1 {
-  color: #3c3732; /* Darker brown for heading - from image */
-  font-size: 2.4em; /* Slightly smaller heading */
+  color: #3c3732;
+  font-size: 2.4em;
   margin-bottom: 15px;
-  font-weight: bold; /* Bold heading */
-}
-
-.page-indicator {
-  color: #7d7369; /* Greyish brown for page indicator - from image */
-  font-size: 1.1em;
-  margin-top: 0;
+  font-weight: bold;
 }
