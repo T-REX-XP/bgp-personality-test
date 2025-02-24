@@ -28,7 +28,7 @@ export const mockQuestions: Question[] = [
   // Extraversion (10 questions)
   { id: 21, textLeft: 'I am quiet around strangers', textRight: 'I am the life of the party', trait: 'Extraversion' },
   { id: 22, textLeft: 'I prefer to keep to myself', textRight: 'I enjoy being the center of attention', trait: 'Extraversion' },
-  { id: 23, textLeft: `I don't talk a lot', textRight: 'I talk to a lot of different people`, trait: 'Extraversion' },
+  { id: 23, textLeft: 'I don't talk a lot', textRight: 'I talk to a lot of different people', trait: 'Extraversion' },
   { id: 24, textLeft: 'I find it hard to approach others', textRight: 'I am comfortable around people', trait: 'Extraversion' },
   { id: 25, textLeft: 'I keep in the background', textRight: 'I take charge in social situations', trait: 'Extraversion' },
   { id: 26, textLeft: 'I am reserved and introverted', textRight: 'I am outgoing and sociable', trait: 'Extraversion' },
